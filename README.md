@@ -1,7 +1,7 @@
 # DevHaven
 Mulitplayer Game using pokemon api.
 
-Run following commands: 
+Run following commands in the server folder: 
 
 `npm i express`
 
