@@ -1,7 +1,7 @@
 const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 let currentPokemon;
 
-// const sock=io();
+const sock=io();
 
 let points = 0;
 
@@ -40,7 +40,7 @@ function checkEnterKey(event) {
 function checkGuess() {
     const userGuess = document.getElementById("guessInput").value.toLowerCase();
 
-    // sock.emit("User guess:", userGuess);
+    sock.emit("User guess:", userGuess);
     if (userGuess === currentPokemon.name) {
         var image = document.getElementById("pokemonImage");
         image.style.filter = 'none';
